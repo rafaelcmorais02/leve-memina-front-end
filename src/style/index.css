@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Scheherazade New", serif;
+}
+
+.column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media screen and (max-width: 768px) {
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.containerCard {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image: linear-gradient(
+      30deg,
+      #cfa5b4 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #cfa5b4 87.5%,
+      #cfa5b4
+    ),
+    linear-gradient(
+      150deg,
+      #cfa5b4 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #cfa5b4 87.5%,
+      #cfa5b4
+    ),
+    linear-gradient(
+      30deg,
+      #cfa5b4 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #cfa5b4 87.5%,
+      #cfa5b4
+    ),
+    linear-gradient(
+      150deg,
+      #cfa5b4 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #cfa5b4 87.5%,
+      #cfa5b4
+    ),
+    linear-gradient(
+      60deg,
+      #cfa5b477 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #cfa5b477 75%,
+      #cfa5b477
+    ),
+    linear-gradient(
+      60deg,
+      #cfa5b477 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #cfa5b477 75%,
+      #cfa5b477
+    );
+  background-size: 34px 60px;
+  background-position: 0 0, 0 0, 17px 30px, 17px 30px, 0 0, 17px 30px;
+}
+
+.card {
+  margin: 15px 30px 15px 30px;
+}
+
+.Introducao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+  background-color: white;
+}
