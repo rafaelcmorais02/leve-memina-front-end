@@ -1,9 +1,10 @@
 import React from "react"
 function Card(props) {
-    const { title, descricao, image } = props
+    const { title, descricao, image, id } = props
     const setFlag = (flag) => props.setFlag(flag)
     const handleFlag = () => {
         setFlag(prev => !prev)
+        console.log(id)
     }
 
     return (
