@@ -2,7 +2,7 @@ import React from "react"
 import "../../style/index.css"
 import { useSpring, animated } from "react-spring"
 
-const Modal = ({ flag, setFlag }) => {
+const Modal = ({ flag, setFlag, id }) => {
 
     const animation = useSpring({
         config: {
