@@ -1,29 +1,26 @@
-import React from "react";
-import Card from "./components/cards/cardItems";
+import React, { useState } from "react";
 import Nav from "./components/navNar/nav"
-import cardData from "./data/cards/cardData"
-import Introd from "./components/cards/cardIntroduction"
+import Carousel from "./components/carousel/carousel"
 import Footer from "./components/footer/footer"
+import Modal from "./components/modal/modal"
 import "./style/index.css"
 
 function App() {
+  const [flag, setFlag] = useState(false)
+  if (flag)
+    console.log("verdadeiro")
+  else
+    console.log("falso")
+
   return (
-    <>
-      <Nav />
-      <Introd />
-      <div className="containerCard">
-        <section className="column">
-          {cardData.map((element) => {
-            return (
-              <div key={element.id}>
-                <Card className="card" title={element.title} descricao={element.descricao} image={element.img} />
-              </div>
-            )
-          })}
-        </section >
+    <div className=".container-fluid">
+      <Modal flag={flag} setFlag={setFlag} />
+      <div className="zIndex">
+        <Nav />
+        <Carousel setFlag={setFlag} />
+        <Footer />
       </div>
-      <Footer />
-    </>
+    </div>
   )
 }
 

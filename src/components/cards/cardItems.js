@@ -1,16 +1,24 @@
 import React from "react"
-function card(props) {
+function Card(props) {
     const { title, descricao, image } = props
+    const setFlag = (flag) => props.setFlag(flag)
+    const handleFlag = () => {
+        setFlag(prev => !prev)
+    }
+
     return (
-        <div className="card" style={{ "width": "18rem" }}>
-            <img src={image} className="card-img-top" alt="..." />
-            <div className="card-body">
-                <h5 className="card-title">{title}</h5>
-                <p className="card-text">{descricao}.</p>
-                <a href="https://getbootstrap.com/docs/5.0/components/card/" className="btn btn-secondary" style={{ "background-color": "#212529" }}>Ver mais</a>
+        <>
+            <div className="card" style={{ "width": "20rem", "backgroundColor": "#D880A2" }}>
+                <img src={image} className="card-img-top" alt="..." style={{ "marginTop": "10px" }} />
+                <div className="card-body" style={{ "backgroundColor": "#D880A2" }}>
+                    <h5 className="card-title">{title}</h5>
+                    <p className="card-text">{descricao}.</p>
+                    <button className="btn btn-secondary" onClick={handleFlag} style={{ "backgroundColor": "#212529" }}>Ver mais</button>
+                </div>
             </div>
-        </div>
+
+        </>
     )
 }
 
-export default card
+export default Card

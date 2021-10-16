@@ -3,12 +3,12 @@ const nav = () => {
     return (
         <>
             <div className="collapse" id="navbarToggleExternalContent">
-                <div className="bg-dark p-4">
-                    <h5 className="text-white h4">Collapsed content</h5>
-                    <span className="text-muted">Toggleable via the navbar brand.</span>
+                <div className="p-4" style={{ "backgroundColor": "#e8e4d9" }}>
+                    <h5 className="text-black h4">Leve Menina</h5>
+                    <span className="text-muted">Feito com amor</span>
                 </div>
             </div>
-            <nav className="navbar navbar-light" style={{ "background-color": "#846B8A" }}>
+            <nav className="navbar navbar-light" style={{ "backgroundColor": "#944262" }}>
                 <div className="container-fluid">
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
