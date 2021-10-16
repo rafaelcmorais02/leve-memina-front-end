@@ -1,10 +1,8 @@
-import imag1 from "../../images/imag1.jpeg"
-import imag2 from "../../images/imag2.jpeg"
-import imag3 from "../../images/imag3.jpeg"
 import Card from "../cards/cardItems"
 import React, { useState, useEffect } from 'react';
+import { dadosCard } from "../../data/dataCard"
+import { numbCarousel } from "../../data/dataCarousel"
 import "../../style/index.css"
-
 
 
 const Carousel = (props) => {
@@ -36,34 +34,26 @@ const Carousel = (props) => {
             return (
                 <div id="carouselExampleIndicators" className="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div className="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        {numbCarousel.map((item) => {
+                            return (
+                                <button key={item.id} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={item.id} className={item.secClassName} aria-current={item.current} aria-label={item.label}></button>
+                            )
+                        })}
                     </div>
+
                     <div className="carousel-inner">
-                        <div className="carousel-item active">
-                            <section className="row">
-                                <Card title={"Teste"} descricao={"descricao teste"} image={imag1} setFlag={setFlag} />
-                                <Card title={"Teste"} descricao={"descricao teste"} image={imag2} setFlag={setFlag} />
-                                <Card title={"Teste"} descricao={"descricao teste"} image={imag3} setFlag={setFlag} />
-                            </section>
-                        </div>
-                        <div className="carousel-item">
-                            <section className="row">
-                                <Card title={"Teste"} descricao={"descricao teste"} image={imag1} setFlag={setFlag} />
-                                <Card title={"Teste"} descricao={"descricao teste"} image={imag2} setFlag={setFlag} />
-                                <Card title={"Teste"} descricao={"descricao teste"} image={imag3} setFlag={setFlag} />
-                            </section>
+                        {numbCarousel.map((item) => {
+                            return (
+                                <div key={item.id} className={item.className}>
+                                    <section key={item.id} className="row">
+                                        <Card id={item.dados.id[0]} title={item.dados.titulo[0]} descricao={item.dados.descricao[0]} image={item.dados.imag[0]} setFlag={setFlag} />
+                                        <Card id={item.dados.id[1]} title={item.dados.titulo[1]} descricao={item.dados.descricao[1]} image={item.dados.imag[1]} setFlag={setFlag} />
+                                        <Card id={item.dados.id[2]} title={item.dados.titulo[2]} descricao={item.dados.descricao[2]} image={item.dados.imag[2]} setFlag={setFlag} />
+                                    </section>
+                                </div>
+                            )
+                        })}
 
-                        </div>
-                        <div className="carousel-item">
-                            <section className="row">
-                                <Card title={"Teste"} descricao={"descricao teste"} image={imag1} setFlag={setFlag} />
-                                <Card title={"Teste"} descricao={"descricao teste"} image={imag2} setFlag={setFlag} />
-                                <Card title={"Teste"} descricao={"descricao teste"} image={imag3} setFlag={setFlag} />
-                            </section>
-
-                        </div>
                     </div>
                     <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -80,26 +70,22 @@ const Carousel = (props) => {
             return (
                 <div id="carouselExampleIndicators" className="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div className="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        {dadosCard.map((item) => {
+                            return (
+                                <button key={item.id} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={item.id} className={item.secClassName} aria-current={item.current} aria-label={item.label}></button>
+                            )
+                        })}
                     </div>
                     <div className="carousel-inner">
-                        <div className="carousel-item active">
-                            <section className="row">
-                                <Card title={"Teste"} descricao={"descricao teste"} image={imag1} setFlag={setFlag} />
-                            </section>
-                        </div>
-                        <div className="carousel-item">
-                            <section className="row">
-                                <Card title={"Teste"} descricao={"descricao teste"} image={imag1} setFlag={setFlag} />
-                            </section>
-                        </div>
-                        <div className="carousel-item">
-                            <section className="row">
-                                <Card title={"Teste"} descricao={"descricao teste"} image={imag1} setFlag={setFlag} />
-                            </section>
-                        </div>
+                        {dadosCard.map((item) => {
+                            return (
+                                <div key={item.id} className={item.className}>
+                                    <section key={item.id} className="row">
+                                        <Card id={item.id} title={item.titulo} descricao={item.descricao} image={item.imag} setFlag={setFlag} />
+                                    </section>
+                                </div>
+                            )
+                        })}
                     </div>
                     <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
