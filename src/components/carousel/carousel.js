@@ -1,12 +1,13 @@
 import Card from "../cards/cardItems"
 import React, { useState, useEffect } from 'react';
 import { dadosCard } from "../../data/dataCard"
-import { numbCarousel } from "../../data/dataCarousel"
+import formatCarousel from "../../data/dataCarousel"
 import "../../style/index.css"
 
+let phoneFlag = false
+const numbCarousel = formatCarousel()
 
 const Carousel = (props) => {
-
     const setFlag = (flag) => props.setFlag(flag)
     const setId = (id) => props.setId(id)
 
@@ -24,24 +25,31 @@ const Carousel = (props) => {
         function handleResize() {
             setWindowDimensions(getWindowDimensions());
         }
-
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
     const handleCarousel = () => {
-
         if (windowDimensions.width >= 900) {
+            if (phoneFlag === true) {
+                phoneFlag = false
+                document.location.reload()
+            }
             return (
                 <div id="carouselExampleIndicators" className="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div className="carousel-indicators">
                         {numbCarousel.map((item) => {
-                            return (
-                                <button key={item.id} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={item.id} className={item.secClassName} aria-current={item.current} aria-label={item.label}></button>
-                            )
+                            if (item.id === 0) {
+                                return (
+                                    <button key={item.id} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={item.id} className={item.secClassName} aria-current={item.current} aria-label={item.label}></button>
+                                )
+                            } else {
+                                return (
+                                    <button key={item.id} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={item.id} aria-label={item.label}></button>
+                                )
+                            }
                         })}
                     </div>
-
                     <div className="carousel-inner">
                         {numbCarousel.map((item) => {
                             return (
@@ -63,18 +71,26 @@ const Carousel = (props) => {
                     <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                         <span className="carousel-control-next-icon" aria-hidden="true"></span>
                         <span className="visually-hidden">Next</span>
+
                     </button>
                 </div>
             )
         }
         else {
+            phoneFlag = true
             return (
                 <div id="carouselExampleIndicators" className="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div className="carousel-indicators">
                         {dadosCard.map((item) => {
-                            return (
-                                <button key={item.id} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={item.id} className={item.secClassName} aria-current={item.current} aria-label={item.label}></button>
-                            )
+                            if (item.id === 0) {
+                                return (
+                                    <button key={item.id} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={item.id} className={item.secClassName} aria-current={item.current} aria-label={item.label}></button>
+                                )
+                            } else {
+                                return (
+                                    <button key={item.id} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={item.id} aria-label={item.label}></button>
+                                )
+                            }
                         })}
                     </div>
                     <div className="carousel-inner">

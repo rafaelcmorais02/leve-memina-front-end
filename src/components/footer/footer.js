@@ -13,8 +13,8 @@ const footer = () => {
             </div>
 
             <div className="text-center p-3" style={{ "backgroundColor": "#944262" }}>
-                © 2020 Copyright:
-                <a className="text-white" href="#!"> Emillie Sara Santos Oliveira</a>
+                © 2021 Copyright:
+                <a className="text-white" href="#!"> Leve Menina</a>
             </div>
         </footer>
     )

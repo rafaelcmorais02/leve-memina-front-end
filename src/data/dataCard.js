@@ -10,63 +10,57 @@ export const dadosCard = [
         current: "true",
         label: "Slide 1",
         imag: imag1,
-        titulo: "teste",
+        titulo: "titulo1",
         descricao: "teste"
     },
     {
         id: 1,
         className: "carousel-item",
-        current: "false",
         label: "Slide 2",
         imag: imag2,
-        titulo: "teste",
+        titulo: "titulo2",
         descricao: "teste"
 
     },
     {
         id: 2,
         className: "carousel-item",
-        current: "false",
         label: "Slide 3",
         imag: imag3,
-        titulo: "teste",
+        titulo: "titulo3",
         descricao: "teste"
 
     },
     {
         id: 3,
         className: "carousel-item",
-        current: "false",
         label: "Slide 4",
         imag: imag1,
-        titulo: "teste",
+        titulo: "titulo4",
         descricao: "teste"
 
     },
     {
         id: 4,
         className: "carousel-item",
-        current: "false",
         label: "Slide 5",
         imag: imag2,
-        titulo: "teste",
+        titulo: "titulo5",
         descricao: "teste"
 
     },
     {
         id: 5,
         className: "carousel-item",
-        current: "false",
         label: "Slide 6",
         imag: imag3,
-        titulo: "teste",
+        titulo: "titulo6",
         descricao: "teste"
 
     },
     {
         id: 6,
         className: "carousel-item",
-        current: "false",
         label: "Slide 7",
         imag: imag1,
         titulo: "teste",
@@ -75,7 +69,6 @@ export const dadosCard = [
     {
         id: 7,
         className: "carousel-item",
-        current: "false",
         label: "Slide 8",
         imag: imag2,
         titulo: "teste",
@@ -84,7 +77,6 @@ export const dadosCard = [
     {
         id: 8,
         className: "carousel-item",
-        current: "false",
         label: "Slide 9",
         imag: imag3,
         titulo: "teste",
@@ -93,7 +85,6 @@ export const dadosCard = [
     {
         id: 9,
         className: "carousel-item",
-        current: "false",
         label: "Slide 10",
         imag: imag1,
         titulo: "teste",
@@ -102,7 +93,6 @@ export const dadosCard = [
     {
         id: 10,
         className: "carousel-item",
-        current: "false",
         label: "Slide 11",
         imag: imag2,
         titulo: "teste",
@@ -111,7 +101,6 @@ export const dadosCard = [
     {
         id: 11,
         className: "carousel-item",
-        current: "false",
         label: "Slide 12",
         imag: imag3,
         titulo: "teste",
