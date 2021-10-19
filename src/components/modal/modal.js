@@ -5,7 +5,8 @@ import { useSpring, animated } from "react-spring"
 
 const Modal = ({ flag, setFlag, id }) => {
 
-    const handleClick = async () => {
+
+    const handleSend = async () => {
 
 
         const getFieldData = () => {
@@ -35,11 +36,21 @@ const Modal = ({ flag, setFlag, id }) => {
         await axios(config)
             .then(function (response) {
                 console.log(JSON.stringify(response.data));
+                window.alert("Mensagem enviada com sucesso")
+                setFlag(false)
+
             })
             .catch(function (error) {
                 console.log(error);
+                window.alert("É preciso completar todos os campos")
             });
     }
+
+    const handleClose = () => {
+        setFlag(false)
+    }
+
+
     const animation = useSpring({
         config: {
             duration: 250,
@@ -47,7 +58,6 @@ const Modal = ({ flag, setFlag, id }) => {
         opacity: flag ? 1 : 0,
         transform: flag ? 'translateY(0%)' : 'translateY(100%)'
     })
-
 
     return (
         <>
@@ -66,7 +76,8 @@ const Modal = ({ flag, setFlag, id }) => {
                                     <input id="telefone" type="tel" name="telefone" className="form-control" placeholder="Telefone" />
                                 </div>
                                 <div className="col-12">
-                                    <button type="submit" className="btn btn-dark float-end" onClick={handleClick}>Enviar</button>
+                                    <button type="button" className="btn btn-dark float-end" onClick={handleSend}>Enviar</button>
+                                    <button type="button" className="btn btn-dark float-end" onClick={handleClose} style={{ "marginRight": "5px" }}>close</button>
                                 </div>
                             </form>
                         </div>
