@@ -8,20 +8,27 @@ import "./style/index.css"
 function App() {
   const [id, setId] = useState(0)
   const [flag, setFlag] = useState(false)
-  if (flag)
+  const elemenet = document.getElementById("comp")
+
+  if (flag) {
     console.log("verdadeiro")
-  else
+    elemenet.style.opacity = 0.2
+  }
+  else {
+    if (elemenet)
+      elemenet.style.opacity = 1
     console.log("falso")
+  }
 
   return (
-    <div className=".container-fluid">
+    <>
       <Modal flag={flag} setFlag={setFlag} id={id} />
-      <div className="zIndex">
+      <div id="comp" className=".container-fluid">
         <Nav />
         <Carousel setFlag={setFlag} setId={setId} />
         <Footer />
       </div>
-    </div>
+    </>
   )
 }
 
