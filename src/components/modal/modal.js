@@ -66,7 +66,7 @@ const Modal = ({ flag, setFlag, id }) => {
                     <animated.div style={animation}>
                         <div className="modalWrapper container">
                             <form action="" method="" className="row g-3">
-                                <h4>Estamos quase lá!</h4>
+                                <h5>Preencha os dados abaixo que em breve entrarei em contato!</h5>
                                 <div className="col-12">
                                     <label>Nome:</label>
                                     <input id="nome" type="text" name="nome" className="form-control" placeholder="Nome completo" />
@@ -77,7 +77,7 @@ const Modal = ({ flag, setFlag, id }) => {
                                 </div>
                                 <div className="col-12">
                                     <button type="button" className="btn btn-dark float-end" onClick={handleSend}>Enviar</button>
-                                    <button type="button" className="btn btn-dark float-end" onClick={handleClose} style={{ "marginRight": "5px" }}>close</button>
+                                    <button type="button" className="btn btn-dark float-end" onClick={handleClose} style={{ "marginRight": "5px" }}>Fechar</button>
                                 </div>
                             </form>
                         </div>

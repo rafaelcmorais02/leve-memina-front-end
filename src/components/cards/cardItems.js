@@ -16,7 +16,13 @@ function Card(props) {
                 <div className="card-body" style={{ "backgroundColor": "#944262" }}>
                     <h5 className="card-title">{title}</h5>
                     <p className="card-text">{descricao}.</p>
-                    <button className="btn btn-secondary" onClick={handleFlag} style={{ "backgroundColor": "#212529" }}>Ver mais</button>
+                    <div className="row2">
+                        <div className="column2">
+                            <button className="btn btn-secondary" onClick={handleFlag} style={{ "backgroundColor": "#212529" }}>Ver mais</button>
+                        </div>
+                        <div className="column3">R$ 49,90</div>
+
+                    </div>
                 </div>
             </div>
 
