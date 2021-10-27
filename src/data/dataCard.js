@@ -1,6 +1,7 @@
 import imag1 from "../images/imag1.jpeg"
 import imag2 from "../images/imag2.jpeg"
 import imag3 from "../images/imag3.jpeg"
+import imag4 from "../images/imag4.jpeg"
 
 export const dadosCard = [
     {
@@ -9,9 +10,9 @@ export const dadosCard = [
         secClassName: "active",
         current: "true",
         label: "Slide 1",
-        imag: imag1,
-        titulo: "titulo1",
-        descricao: "teste"
+        imag: imag4,
+        titulo: "Conjunto Amarelo",
+        descricao: "Alças reguláveis, todo detalhado em renda. Para um look sensual. Disponível no tamanho M"
     },
     {
         id: 1,

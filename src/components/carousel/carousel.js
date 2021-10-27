@@ -36,8 +36,8 @@ const Carousel = (props) => {
                 document.location.reload()
             }
             return (
-                <div id="carouselExampleIndicators" className="carousel carousel-dark slide" data-bs-ride="carousel">
-                    <div className="carousel-indicators">
+                <div id="carouselExampleIndicators" className="carousel carousel-dark slide margin-carousel" data-bs-ride="carousel">
+                    <div className="carousel-indicators carousel-button">
                         {numbCarousel.map((item) => {
                             if (item.id === 0) {
                                 return (
@@ -79,8 +79,8 @@ const Carousel = (props) => {
         else {
             phoneFlag = true
             return (
-                <div id="carouselExampleIndicators" className="carousel carousel-dark slide" data-bs-ride="carousel">
-                    <div className="carousel-indicators">
+                <div id="carouselExampleIndicators" className="carousel carousel-dark slide margin-carousel" data-bs-ride="carousel">
+                    <div className="carousel-indicators carousel-button">
                         {dadosCard.map((item) => {
                             if (item.id === 0) {
                                 return (

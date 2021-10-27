@@ -29,7 +29,7 @@ body {
 }
 
 .card {
-  margin: 15px 20px 15px 20px;
+  margin: 0px 20px 0px 20px;
 }
 
 .Introducao {
@@ -41,11 +41,6 @@ body {
   width: 100%;
   background-color: #d880a2;
   margin-top: 20px;
-}
-
-.row2 {
-  display: flex;
-  flex-direction: row;
 }
 
 .column3 {
@@ -64,14 +59,16 @@ body {
   width: 40%;
 }
 
+.row2 {
+  display: flex;
+  flex-direction: row;
+}
 .row {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 500px;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .modalBackground {
@@ -99,4 +96,24 @@ body {
   border: 2px;
   border-color: #944262;
   border-style: solid;
+}
+
+.margin-carousel {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.descricao-card {
+  height: 80px;
+  font-weight: 400;
+  color: white;
+}
+
+.carousel-button {
+  margin-bottom: -22px;
+}
+
+.title-card {
+  font-weight: 600;
+  color: white;
 }
