@@ -1,4 +1,3 @@
-import imag1 from "../images/imag1.jpeg"
 import imag2 from "../images/imag2.jpeg"
 import imag3 from "../images/imag3.jpeg"
 import imag4 from "../images/imag4.jpeg"
