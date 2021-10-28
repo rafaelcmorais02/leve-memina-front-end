@@ -18,7 +18,7 @@ function Card(props) {
                     <p className="card-text descricao-card">{descricao}</p>
                     <div className="row2">
                         <div className="column2">
-                            <button className="btn btn-secondary" onClick={handleFlag} style={{ "backgroundColor": "#212529" }}>Ver mais</button>
+                            <button className="btn btn-secondary" onClick={handleFlag} style={{ "backgroundColor": "#212529" }}>Comprar</button>
                         </div>
                         <div className="column3">R$ 49,90</div>
 
