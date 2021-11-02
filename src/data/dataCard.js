@@ -36,7 +36,7 @@ export const dadosCard = [
     {
         id: 3,
         className: "carousel-item",
-        label: "Slide 3",
+        label: "Slide 4",
         imag: imag4,
         titulo: "Conjunto Flor - M",
         descricao: "Preto, detalhes em renda, bojo bem firme e alcinha ajustável. Te deixa ainda mais linda"
@@ -44,7 +44,7 @@ export const dadosCard = [
     {
         id: 4,
         className: "carousel-item",
-        label: "Slide 3",
+        label: "Slide 5",
         imag: imag5,
         titulo: "Conjunto Sexy - M",
         descricao: "Preto, detalhes em renda + acessório, calcinha com detalhe vazado. Te deixa ainda mais sensual"
@@ -52,7 +52,7 @@ export const dadosCard = [
     {
         id: 5,
         className: "carousel-item",
-        label: "Slide 3",
+        label: "Slide 6",
         imag: imag6,
         titulo: "Conjunto Glamour - M",
         descricao: "Preto, detalhes em renda, calcinha modelo fio dental e sutiã bojo. Te deixa ainda mais sexy"
