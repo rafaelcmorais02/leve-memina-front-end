@@ -2,10 +2,10 @@ import React from "react"
 const nav = () => {
     return (
         <>
-            <div className="collapse" id="navbarToggleExternalContent">
+            <div className="collapse show" id="navbarToggleExternalContent">
                 <div className="p-4" style={{ "backgroundColor": "#e8e4d9" }}>
                     <h5 className="text-black h4">Leve Menina</h5>
-                    <span className="text-muted">Feito com amor</span>
+                    <span className="text-muted">A moda que traz consigo sua beleza</span>
                 </div>
             </div>
             <nav className="navbar navbar-light" style={{ "backgroundColor": "#d880a2" }}>
