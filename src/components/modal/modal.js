@@ -2,6 +2,7 @@ import React from "react"
 import axios from "axios"
 import "../../style/index.css"
 import { useSpring, animated } from "react-spring"
+import { dadosCard } from "../../data/dataCard"
 
 const Modal = ({ flag, setFlag, id }) => {
 
@@ -10,10 +11,15 @@ const Modal = ({ flag, setFlag, id }) => {
 
 
         const getFieldData = () => {
+            console.log("Esse é o dado")
+
+            const dado = dadosCard.find(x => x.id === id)
+            console.log(dado)
+
             return {
                 "nome": document.getElementById("nome").value,
                 "telefone": document.getElementById("telefone").value,
-                "id": id
+                "title": dado.titulo
             }
 
         }

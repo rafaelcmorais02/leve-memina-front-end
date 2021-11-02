@@ -1,6 +1,9 @@
-import imag2 from "../images/imag2.jpeg"
-import imag3 from "../images/imag3.jpeg"
-import imag4 from "../images/imag4.jpeg"
+import imag1 from "../images/imag01.jpeg"
+import imag2 from "../images/imag02.jpeg"
+import imag3 from "../images/imag03.jpeg"
+import imag4 from "../images/imag04.jpeg"
+import imag5 from "../images/imag05.jpeg"
+import imag6 from "../images/imag06.jpeg"
 
 export const dadosCard = [
     {
@@ -9,25 +12,49 @@ export const dadosCard = [
         secClassName: "active",
         current: "true",
         label: "Slide 1",
-        imag: imag4,
-        titulo: "1 - Conjunto Amarelo",
-        descricao: "Alças reguláveis, todo detalhado em renda. Para um look sensual. Disponível no tamanho M"
+        imag: imag1,
+        titulo: "Conjunto Linda - P",
+        descricao: "Preto, detalhes em renda, sutiã com bojo e alcinha ajustável. Modela muito bem seu corpo"
     },
     {
         id: 1,
         className: "carousel-item",
         label: "Slide 2",
         imag: imag2,
-        titulo: "2 - Conjunto Marrom",
-        descricao: "Alças reguláveis, todo detalhado em renda. Para um look sensual. Disponível no tamanho M"
+        titulo: "Conjunto Maravilha - G",
+        descricao: "Lilás, detalhes em renda, sutiã com bojo e alcinha ajustável. Combina conforto e beleza"
+
     },
     {
         id: 2,
         className: "carousel-item",
         label: "Slide 3",
         imag: imag3,
-        titulo: "3 - Conjunto Vermelho",
-        descricao: "Alças reguláveis, todo detalhado em renda. Para um look sensual. Disponível no tamanho M"
-
+        titulo: "Conjunto Bela - M",
+        descricao: "Goiaba, detalhes em renda, bojo bem firme e alcinha ajustável. Modela super bem no corpo"
+    },
+    {
+        id: 3,
+        className: "carousel-item",
+        label: "Slide 3",
+        imag: imag4,
+        titulo: "Conjunto Flor - M",
+        descricao: "Preto, detalhes em renda, bojo bem firme e alcinha ajustável. Te deixa ainda mais linda"
+    },
+    {
+        id: 4,
+        className: "carousel-item",
+        label: "Slide 3",
+        imag: imag5,
+        titulo: "Conjunto Sexy - M",
+        descricao: "Preto, detalhes em renda + acessório, calcinha com detalhe vazado. Te deixa ainda mais sexy"
+    },
+    {
+        id: 5,
+        className: "carousel-item",
+        label: "Slide 3",
+        imag: imag6,
+        titulo: "Conjunto Glamour - M",
+        descricao: "Preto, detalhes em renda, calcinha modelo fio dental e sutiã bojo. Te deixa ainda mais sexy"
     }
 ];
