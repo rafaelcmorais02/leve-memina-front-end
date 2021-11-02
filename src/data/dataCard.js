@@ -47,7 +47,7 @@ export const dadosCard = [
         label: "Slide 3",
         imag: imag5,
         titulo: "Conjunto Sexy - M",
-        descricao: "Preto, detalhes em renda + acessório, calcinha com detalhe vazado. Te deixa ainda mais sexy"
+        descricao: "Preto, detalhes em renda + acessório, calcinha com detalhe vazado. Te deixa ainda mais sensual"
     },
     {
         id: 5,
